@@ -1,0 +1,103 @@
+body {
+    background-color: navy;
+    color: white;
+    background-image: url('../tech-globe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    font-family: "Share Tech Mono", monospace;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+header {
+
+    color:white;
+    min-height: 200px;
+    padding-top: 0px;
+}
+
+.nav-wrapper {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+#title-text {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.card-image img {
+    height: 400px;
+    border: solid 2px black;
+}
+
+.card-title {
+    -webkit-text-stroke: 1px black;
+    font-size: 30px !important;
+}
+
+ul.dropdown-content {
+  width: 250px !important;
+}
+
+.pong-container {
+  text-align: center;
+}
+
+.pong {
+  width: 405px;
+  height:405px;
+  display: inline-block;
+}
+
+.project1_1-container {
+  text-align:center;
+}
+
+.project1_1 {
+width:40%;
+height:auto;
+display:inline-block;
+}
+
+.project1_2-container {
+  text-align:center;
+}
+
+.project1_2 {
+width:40%;
+height:auto;
+display:inline-block;
+}
+
+.project3_2-container {
+  text-align:center;
+}
+
+.project3_2 {
+width:60%;
+height:auto;
+display:inline-block;
+}
+
+.project3_3-container {
+  text-align:center;
+}
+
+.project3_3 {
+width:40%;
+height:auto;
+display:inline-block;
+}
+
+img.top-images {
+  width: 300px !important;
+  text-align: center;
+}

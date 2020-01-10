@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">        
+        <link href="css/materialize.min.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+
+        <meta name="robots" content="noindex">
+        
+         <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+        <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+        <title>
+            CGPS Computer Science
+        </title>
+    </head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper deep-purple darken-2">
+			<a href="index.html" class="brand-logo">
+				<i class="material-icons">computer</i>
+                    CS @ CGPS
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                   <li>
+                     <a class='dropdown-trigger' data-target='dropdown1'>Courses</a>
+
+  
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="introtoprogramming.html">Intro to Programming</a></li>
+                        <li><a href="swift-class.html">Swift</a></li>
+                        <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
+                        <li><a href="#!">AP Computer Science</a></li>
+                      </ul>
+                      </li>
+                    <li><a href="studentwork.html">Student Work</a></li>
+                    <li><a class='dropdown-trigger' data-target='dropdown1'>Examples</a>
+
+  
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="introtoprogramming.html">Intro to Programming</a></li>
+                        <li><a href="swift-class.html">Swift</a></li>
+                        <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
+                        <li><a href="#!">AP Computer Science</a></li>
+                      </ul></li>
+                </ul>
+            </div>
+        </nav>
+        <header id="header" class="scale-transition scale-out container">
+            <h1 id="title-text" class="center-align">Computer Science @ CGPS</h1>
+            <h3 class="center-align">Fall 2019</h3>
+            <div class="row">
+                <div class="col m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/cs-courses.jpg" class="top-images">
+                                <span class="card-title">About the Course</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="card-image">
+                          <a href="studentwork.html">
+                            <img src="images/stoplightanimation.gif" class="top-images">
+                            <span class="card-title">Student Work</span>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/spaceshipgame.gif" class="top-images">
+                                <span class="card-title">Teacher Examples</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script>
+            let header = document.getElementById("header");
+            header.classList.add("scale-in");
+
+            $('.dropdown-trigger').dropdown();
+        </script>
+    </body>
+</html>
