@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
 
@@ -33,29 +34,57 @@
 			<i class="material-icons">computer</i>
                     CS @ CGPS
                 </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                   <li>
-                     <a class='dropdown-trigger' data-target='dropdown1'>Courses</a>
+             
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
 
-  
-                      <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="intro2.html">Intro to Programming</a></li>
-                        <li><a href="swift-class.html">Swift</a></li>
-                        <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
-                        <li><a href="#!">AP Computer Science</a></li>
-                      </ul>
-                      </li>
-                    <li><a href="studentwork.html">Student Work</a></li>
-                    <li><a class='dropdown-trigger' data-target='dropdown1'>Examples</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a class='dropdown-trigger' data-target='dropdown1'>Courses</a>
 
-  
-                      <ul id='dropdown1' class='dropdown-content'>
+                    <ul id='dropdown1' class='dropdown-content'>
                         <li><a href="introtoprogramming.html">Intro to Programming</a></li>
                         <li><a href="swift-class.html">Swift</a></li>
                         <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
                         <li><a href="#!">AP Computer Science</a></li>
-                      </ul></li>
-                </ul>
+                    </ul>
+                </li>
+                <li><a href="studentwork.html">Student Work</a></li>
+                <li><a class='dropdown-trigger' data-target='dropdown1'>Examples</a>
+
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="introtoprogramming.html">Intro to Programming</a></li>
+                        <li><a href="swift-class.html">Swift</a></li>
+                        <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
+                        <li><a href="#!">AP Computer Science</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a class='dropdown-trigger' data-target='dropdown1'>Courses</a>
+
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="introtoprogramming.html">Intro to Programming</a></li>
+            <li><a href="swift-class.html">Swift</a></li>
+            <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
+            <li><a href="#!">AP Computer Science</a></li>
+        </ul>
+      </li>
+      <li><a href="studentwork.html">Student Work</a></li>
+      <li><a class='dropdown-trigger' data-target='dropdown1'>Examples</a>
+
+      <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="introtoprogramming.html">Intro to Programming</a></li>
+          <li><a href="swift-class.html">Swift</a></li>
+          <li><a href="objectorientedprogramming.html">Object Oriented Programming</a></li>
+          <li><a href="#!">AP Computer Science</a></li>
+      </ul>
+  </li>
+    </ul>
             </div>
         </nav>
     
@@ -175,7 +204,11 @@
             </li>
             <li>
                 <div class="collapsible-header"><font color="black">Big Project 3 - Tic-Tac-Toe</font></div>
-                <div class="collapsible-body"><span>Create a tic-tac-toe grid.
+                <div class="collapsible-body"><span>
+                  <div class="bigproj3-container">
+                  <iframe class="bigproj3" src="https://editor.p5js.org/jlurie21/embed/x04jOO2_W"></iframe>
+                  <br>
+                  Create a tic-tac-toe grid.
                     <br>
                     Depending on where the person clicks in the grid, have your program draw an X or an O.
                     <br>
@@ -199,6 +232,10 @@
             header.classList.add("scale-in");
 
             $('.dropdown-trigger').dropdown();
+
+             $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
         </script>
     </body>
 </html>

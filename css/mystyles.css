@@ -34,7 +34,8 @@ header {
 }
 
 .card-image img {
-    height: 400px;
+    width: 26.5%;
+    height: 300px;
     border: solid 2px black;
 }
 
@@ -45,6 +46,7 @@ header {
 
 ul.dropdown-content {
   width: 250px !important;
+  color: black !important;
 }
 
 .pong-container {
@@ -100,4 +102,14 @@ display:inline-block;
 img.top-images {
   width: 300px !important;
   text-align: center;
+}
+
+.bigproj3-container {
+  text-align:center;
+}
+
+.bigproj3 {
+  width:405px;
+  height:565px;
+  display:inline-block;
 }
